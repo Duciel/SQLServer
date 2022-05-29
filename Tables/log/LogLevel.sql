@@ -1,0 +1,22 @@
+USE [DBATOOLS]
+GO
+
+/****** Object:  Table [log].[LogLevel]    Script Date: 29/05/2022 18:05:28 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [log].[LogLevel](
+	[LogLevel] [tinyint] NOT NULL,
+	[LogLevelDescriptionEN] [nvarchar](100) NULL,
+	[LogLevelDescriptionFR] [nvarchar](100) NULL,
+ CONSTRAINT [PK_LogLevel] PRIMARY KEY CLUSTERED 
+(
+	[LogLevel] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
